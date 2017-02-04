@@ -20,6 +20,12 @@ Initialised AKGRadioButtonGroupView object and pass parameter Group name ,AKGRad
         akgRBGroupView.delegate = self
         self.view.addSubview(akgRBGroupView)
 
- 
+After selection Radio Button result will got in delegate
+eg    :
+   
+     func selectedResult(resultObject:AKGRadioButtonModel){
+        print("Selected Radio Button -> \(resultObject.lblText)")
+     }
+
 
 
