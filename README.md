@@ -3,17 +3,19 @@
 
 
 Make Object of AKGRadioButtonModel like :
- eg   : let maleButton = AKGRadioButtonModel(lblText : "Male" ,identifire : "Male" ,selected : true)
+ eg   :
+ 
+        let maleButton = AKGRadioButtonModel(lblText : "Male" ,identifire : "Male" ,selected : true)
         let femaleButton = AKGRadioButtonModel(lblText : "Female" ,identifire : "Female" ,selected : false)
         let gayButton = AKGRadioButtonModel(lblText : "Other" ,identifire : "Other" ,selected : false)
       
-      akgRadioButtonModel = [maleButton,femaleButton,gayButton]
+        akgRadioButtonModel = [maleButton,femaleButton,gayButton]
 
  
 Initialised AKGRadioButtonGroupView object and pass parameter Group name ,AKGRadioButtonModel array, and positions
  eg    : 
  
-let  akgRBGroupView = AKGRadioButtonGroupView(akgRadioButtonModel : akgRadioButtonModel! ,akgRadioButtonGroupName : "Gender" , akgRadioButtonGroupPosstion : size)
+        let  akgRBGroupView = AKGRadioButtonGroupView(akgRadioButtonModel : akgRadioButtonModel! ,akgRadioButtonGroupName : "Gender" , akgRadioButtonGroupPosstion : size)
         akgRBGroupView.setupView()
         akgRBGroupView.delegate = self
         self.view.addSubview(akgRBGroupView)
